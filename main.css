@@ -1,0 +1,47 @@
+p {
+    background-color: white
+    
+}
+body {
+    background-color:whitesmoke;
+}
+mark{
+    background: red;
+}
+img {
+    widows: 200px;
+    height: 200px;
+    
+}
+#firstp{
+    color: blue;
+}
+
+#javascript img{
+    float: left;
+    width: 30%;
+    height: 30%;
+    margin-right: 10px;
+  
+}
+
+#javascript{
+    text-align: justify;
+    float:right;
+    color: grey;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mytable{
+    border: 1px solid blue;
+    width:100%;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.mytable td,.mytable th{
+    border:1px solid gray;
+    border-radius: 10px;
+    background-color: tomato;
+}
