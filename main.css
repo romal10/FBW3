@@ -9,8 +9,8 @@ mark{
     background: red;
 }
 img {
-    widows: 200px;
-    height: 200px;
+   height: auto;
+    max-width: 100%;
     
 }
 #firstp{
@@ -20,8 +20,9 @@ img {
 #javascript img{
     float: left;
     width: 30%;
-    height: 30%;
+    height: auto;
     margin-right: 10px;
+    max-width: 100%;
   
 }
 
@@ -44,4 +45,9 @@ img {
     border:1px solid gray;
     border-radius: 10px;
     background-color: tomato;
+    width: 20%;
+}
+.mytable span{
+    border:1px solid green;
+    
 }
