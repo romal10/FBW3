@@ -1,0 +1,166 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    // background: lightgreen;
+    // margin: 15px;
+    clip-path: polygon( 0 0, 100vw 0, 100vw 75vh, 0 100vh);
+    
+    position: relative;
+    background-image:linear-gradient(to right, rgba(126,213,111,0.6)), url(hero.jpg);
+    background-size: cover;
+    background-position: top;
+    
+}
+
+.navigation-icon{
+    position: relative;
+    margin-top:35px;
+    left: 20px;
+    
+    
+
+}
+
+.navigation-icon::after, .navigation-icon::before, .navigation-icon{
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color:#333;
+}
+
+.navigation-icon::before{
+    top: -8px;
+}
+
+.navigation-icon::after{
+    top: 8px;
+
+}
+
+.navigation-icon::after, .navigation-icon::before{ 
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.navigation-button{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 60px;
+    right: 60px;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+.navigation-background{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    background-image: radial-gradient(#7ed56f, #28b485);
+    z-index: 1;
+    top: 65px;
+    right: 65px;
+    border-radius: 50%;
+    transition: all 1.2s cubic-bezier(0.86,0,0.07,1);
+
+}
+
+.navigation-list{
+    
+    text-align: center;
+    
+}
+
+.navigation-item{
+    text-decoration: none;
+
+}
+
+.navigation-checkbox:checked ~ .navigation-background{
+    transform: scale(80);
+
+}
+
+.navigation-checkbox{
+    display: none;
+}
+
+
+
+
+.navigation-button:hover .navigation-icon::before{
+    top: -10px;
+
+}
+
+.navigation-button:hover .navigation-icon::after{
+    top: 10px;
+    
+}
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 35px;
+    height: 35px;
+
+}
+
+.logo-box img{
+   
+    height: 35px;
+
+
+}
+
+.header-txt-box{
+    position: absolute;
+    top: 40%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%,-50%)
+    
+}
+
+.first-text{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2.5rem;
+    font-size: 1em;
+    
+    font-weight: 700;
+
+}
+
+.second-text{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    
+    line-height: 1.7;
+
+
+}
+    
