@@ -1,0 +1,56 @@
+import React ,{useState} from 'react';
+
+
+
+function App() {
+  const [counter , setCounter] =useState(0)
+  const [food, setFood] = useState (['banana']);
+  const [color, setColor] = useState (['lightgreen']);
+  document.body.style.background=color;
+  return (
+    <div className="App">
+    <p>
+      you clicked {counter} times
+    </p>
+     <button onClick={()=>setCounter(counter+1)}>
+       Click Me
+      </button>
+      <div>
+        <button onClick={()=> setColor('red')}>red</button>
+        <button onClick={()=> setColor('blue')}>blue</button>
+        <button onClick={()=> setColor('lightblue')}>lightblue</button>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+// import React, { Component } from 'react'
+
+// export default class App extends Component {
+//   constructor(props) {
+//     super(props)
+  
+//     this.state = {
+//        counter:5
+//     }
+//   }
+  
+//   render() {
+//     return (
+//       <div>
+//       <p>
+//         You clicked {this.state.counter} times
+     
+//         <button onClick ={()=> this.setState({counter:this.state.counter+1})}>
+//         button</button>
+//         </p>
+//       </div>
+//     )
+//   }
+// }
